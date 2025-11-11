@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Book {
+    int id;
+    char title[50];
+    char author[50];
+};
+
+int main() {
+    struct Book books[100];
+    int count = 0, choice, id, i;
+    char title[50];
+
+    while (1) {
+        printf("\n--- Library Management System ---\n");
+        printf("1. Add Book\n2. Display Books\n3. Search Book\n4. Delete Book\n5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter Book ID: ");
+                scanf("%d", &books[count].id);
+                printf("Enter Book Title: ");
+                scanf(" %[^\n]", books[count].title);
+                printf("Enter Author Name: ");
+                scanf(" %[^\n]", books[count].author);
+                count++;
+                printf("Book added successfully!\n");
+                break;
+
+            case 2:
+                printf("\n--- Book List ---\n");
+                for (i = 0; i < count; i++) {
+                    printf("ID: %d | Title: %s | Author: %s\n", books[i].id, books[i].title, books[i].author);
+                }
+                break;
+
+            case 3:
+                printf("Enter book title to search: ");
+                scanf(" %[^\n]", title);
+                for (i = 0; i < count; i++) {
+                    if (strcmp(books[i].title, title) == 0) {
+                        printf("Book Found - ID: %d, Author: %s\n", books[i].id, books[i].author);
+                        break;
+                    }
+                }
+                if (i == count) printf("Book not found!\n");
+                break;
+
+            case 4:
+                printf("Enter book ID to delete: ");
+                scanf("%d", &id);
+                for (i = 0; i < count; i++) {
+                    if (books[i].id == id) {
+                        books[i] = books[count - 1];
+                        count--;
+                        printf("Book deleted successfully!\n");
+                        break;
+                    }
+                }
+                if (i == count) printf("Book not found!\n");
+                break;
+
+            case 5:
+                printf("Exiting... Thank you!\n");
+                return 0;
+
+            default:
+                printf("Invalid choice!\n");
+        }
+    }
+}
