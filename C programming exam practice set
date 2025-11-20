@@ -1,1 +1,121 @@
-hello 
+Data types in C and their sizes
+
+Data Type	Size (in bytes)	Example
+
+int	2 or 4	10
+float	4	3.14
+double	8	3.14159
+char	1	'A'
+
+
+
+---
+
+2. Difference between while, do-while, and for loops
+
+Loop	Syntax	Condition Check	Use Case
+
+while	while(condition){...}	Before loop starts	When number of iterations unknown
+do-while	do{...}while(condition);	After first iteration	To ensure loop runs at least once
+for	for(init; condition; update){...}	Before each iteration	When number of iterations known
+
+
+
+---
+
+3. What is an array?
+
+An array stores multiple values of the same type under one name.
+Example:
+
+int marks[5] = {10, 20, 30, 40, 50};
+printf("%d", marks[2]); // Access element
+
+
+---
+
+4. Functions and function prototypes
+
+A function is a block of code that performs a task.
+Prototype tells the compiler about a function before its use.
+
+int add(int, int); // prototype
+int add(int a, int b) { return a+b; }
+
+
+---
+
+5. Difference between break and continue
+
+break: exits loop immediately.
+
+continue: skips current iteration and continues loop.
+
+
+
+---
+
+6. Advantages/Disadvantages of Functions
+
+✅ Advantages:
+
+Code reuse
+
+Easy debugging
+❌ Disadvantages:
+
+Memory overhead from function calls.
+
+
+
+---
+
+7. Difference between i++ and ++i
+
+i++ → Post-increment (use first, then increase)
+
+++i → Pre-increment (increase first, then use)
+
+
+
+---
+
+8. Use of const keyword
+
+Used to make variables read-only.
+
+const int x = 10; // cannot be changed later
+
+
+---
+
+9. Simple calculator using switch-case
+
+#include <stdio.h>
+int main() {
+    char op;
+    float a, b;
+    printf("Enter operator (+,-,*,/): ");
+    scanf("%c", &op);
+    printf("Enter two numbers: ");
+    scanf("%f %f", &a, &b);
+    switch(op) {
+        case '+': printf("%.2f", a+b); break;
+        case '-': printf("%.2f", a-b); break;
+        case '*': printf("%.2f", a*b); break;
+        case '/': printf("%.2f", a/b); break;
+        default: printf("Invalid operator");
+    }
+    return 0;
+}
+
+
+---
+
+10. Infinite loops
+
+A loop that never ends because the condition is always true.
+
+while(1) {
+   printf("Hello");
+}
