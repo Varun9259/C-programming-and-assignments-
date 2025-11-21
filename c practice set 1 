@@ -1,0 +1,645 @@
+Sure — I’ll give you short, exam-ready answers for each question one by one.
+(Answers are based on your PDF content) 
+
+
+---
+
+1️⃣ Explain data types in C and their sizes.
+
+Data types define the type of data a variable can store.
+
+Type	Example	Size (Approx.)
+
+int	10, 50	2 or 4 bytes
+float	3.14	4 bytes
+char	'A'	1 byte
+double	5.98765	8 bytes
+
+
+
+---
+
+2️⃣ Difference between while, do-while, and for loop.
+
+Loop	Condition Check	Execution
+
+while	Before loop	May not execute
+do-while	After loop	Executes at least once
+for	Before loop	Used when number of iterations known
+
+
+
+---
+
+3️⃣ What is an array? How to declare and access it?
+
+Array is a collection of same data type stored in continuous memory.
+
+Declaration:
+
+int arr[5];
+
+Access:
+
+printf("%d", arr[0]);
+
+
+---
+
+4️⃣ Explain functions and function prototypes in C.
+
+Function: Block of code that performs a task.
+
+Prototype: Declaration of a function before use.
+
+
+Example:
+
+int sum(int, int);   // Prototype
+
+
+---
+
+5️⃣ Difference between break and continue.
+
+break	continue
+
+Exits loop completely	Skips current iteration
+Used in switch/loops	Used only in loops
+
+
+
+---
+
+6️⃣ Advantages/Disadvantages of function.
+
+✔ Advantages:
+
+Reusability
+
+Reduce code size
+
+
+✘ Disadvantage:
+
+More memory due to function calls
+
+
+
+---
+
+7️⃣ Difference between i++ and ++i.
+
+i++ (Post-Increment)	++i (Pre-Increment)
+
+First use then increment	First increment then use
+
+
+
+---
+
+8️⃣ Use of const keyword.
+
+Declares a variable as read-only.
+
+const int x = 10;
+
+
+---
+
+9️⃣ Simple calculator using switch case.
+
+#include <stdio.h>
+int main(){
+    int a,b;
+    char op;
+    printf("Enter: ");
+    scanf("%d %c %d", &a, &op, &b);
+
+    switch(op){
+        case '+': printf("%d", a+b); break;
+        case '-': printf("%d", a-b); break;
+        case '*': printf("%d", a*b); break;
+        case '/': printf("%d", a/b); break;
+        default : printf("Invalid");
+    }
+}
+
+
+---
+
+🔟 Infinite loops and how they occur.
+
+A loop that never ends due to missing or incorrect condition.
+
+Example:
+
+while(1) { }
+
+Great — continuing with answers 11 to 20 in short exam format.
+
+
+---
+
+11️⃣ What is a high-level programming language? Give two examples.
+
+It is a language that is easy to read, write, and understand by humans.
+
+Examples: C, Python, Java.
+
+
+---
+
+12️⃣ Define algorithm.
+
+An algorithm is a step-by-step procedure to solve a problem.
+
+Example: Steps to add two numbers.
+
+
+---
+
+13️⃣ What are the steps involved in algorithm development?
+
+1. Define problem
+
+
+2. Analyze the problem
+
+
+3. Write algorithm
+
+
+4. Test and debug
+
+
+5. Implement program
+
+
+
+
+---
+
+14️⃣ Mention two advantages of using algorithms.
+
+✔ Easy to understand
+✔ Helps in program development and debugging
+
+
+---
+
+15️⃣ Mention two disadvantages of flowcharts.
+
+✘ Time-consuming
+✘ Difficult to modify once designed
+
+
+---
+
+16️⃣ What are the advantages and disadvantages of algorithms?
+
+✔ Advantages
+
+Clear and simple
+
+Easy modification
+
+
+✘ Disadvantages
+
+Time-consuming
+
+Not suitable for complex logic
+
+
+
+---
+
+17️⃣ Differentiate between algorithm and flowchart with examples.
+
+Feature	Algorithm	Flowchart
+
+Meaning	Step-by-step instructions	Diagrammatic representation
+Format	Written language	Symbols and arrows
+
+
+Example:
+
+Algorithm: Write steps to add 2 numbers
+
+Flowchart: Use start, input, process, output symbols
+
+
+
+---
+
+18️⃣ Importance of documentation and maintenance in software development.
+
+📌 Documentation helps users and developers understand the code.
+
+📌 Maintenance improves performance, fixes errors, and updates software.
+
+
+---
+
+19️⃣ What is the structure of a basic C program?
+
+#include <stdio.h>   // Header
+
+int main() {         // main function
+    printf("Hello");
+    return 0;
+}
+
+
+---
+
+20️⃣ Define identifier and keyword in C.
+
+Identifier: Name given to variables, functions, arrays.
+Example: sum, total, main
+
+Keyword: Reserved words with predefined meaning.
+Example: int, return, while
+
+Okay — continuing with answers 21 to 30 in short exam format.
+
+
+---
+
+21️⃣ What are data types? List any four basic data types in C.
+
+Data types specify the type of data a variable can store.
+
+Four basic data types:
+
+int
+
+float
+
+char
+
+double
+
+
+
+---
+
+22️⃣ Write the syntax for declaring a variable in C.
+
+datatype variable_name;
+
+Example:
+
+int age;
+
+
+---
+
+23️⃣ List all the arithmetic operators in C.
+
++ , - , * , / , %
+
+(plus, minus, multiplication, division, modulus)
+
+
+---
+
+24️⃣ What is operator precedence? Why is it important?
+
+Operator precedence defines the priority of operators when more than one appears in an expression.
+
+It is important to avoid ambiguity and ensure correct evaluation.
+
+Example:
+* has higher precedence than +
+So: 5 + 2 * 3 = 11
+
+
+---
+
+25️⃣ What is the use of #include <stdio.h> in C programs?
+
+It is a header file that allows using built-in functions like:
+
+printf()
+
+scanf()
+
+
+
+---
+
+26️⃣ Describe the structure of a C program with example.
+
+A C program consists of:
+
+1. Header files
+
+
+2. Main function
+
+
+3. Body/Statements
+
+
+
+Example:
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello World");
+    return 0;
+}
+
+
+---
+
+27️⃣ Differentiate between keywords and identifiers with examples.
+
+Keywords	Identifiers
+
+Reserved words	User-defined names
+Cannot be changed	Can be assigned values
+Example: int, return, while	Example: sum, x, main
+
+
+
+---
+
+28️⃣ Explain various types of C operators with examples.
+
+a) Arithmetic
+
+a + b, a * b
+
+b) Logical
+
+&&(AND), ||(OR), !(NOT)
+
+c) Bitwise
+
+& (AND), | (OR), ^ (XOR), << , >>
+
+d) Unary
+
+++a, --b
+
+
+---
+
+29️⃣ What are constants in C? Explain different types with examples.
+
+Constants are fixed values that cannot be changed.
+
+Types:
+
+Integer constant: 10
+
+Floating constant: 3.14
+
+Character constant: 'A'
+
+String constant: "Hello"
+
+Symbolic constant (const):
+
+const int x = 5;
+
+
+
+---
+
+30️⃣ What are modifiers in C? Explain short, long, signed, and unsigned.
+
+Modifiers change the data range and size of variables.
+
+Modifier	Meaning
+
+short	Reduces size (ex: short int)
+long	Increases size (ex: long int)
+signed	Can store negative and positive values
+unsigned	Stores only positive values
+
+
+Example:
+
+unsigned int a;
+long double b;
+
+
+Alright — here are answers 31 to 40 in short, exam-ready format.
+
+
+---
+
+31️⃣ Discuss shorthand operators in C with examples.
+
+Shorthand (compound assignment) operators are used to shorten expressions.
+
+Examples:
+
+Normal Statement	Shorthand
+
+a = a + 5;	a += 5;
+b = b - 3;	b -= 3;
+c = c * 2;	c *= 2;
+d = d / 4;	d /= 4;
+
+
+
+---
+
+32️⃣ Explain ternary operator with syntax and example.
+
+It is a shortcut for if-else.
+
+Syntax:
+
+(condition) ? expression1 : expression2;
+
+Example:
+
+int result = (a > b) ? a : b;
+
+
+---
+
+33️⃣ Difference between scanf() and printf().
+
+Feature	scanf()	printf()
+
+Purpose	Input function	Output function
+Format	Reads values from user	Displays values
+
+
+Example:
+
+scanf("%d",&a);
+printf("%d",a);
+
+
+---
+
+34️⃣ What is the purpose of printf() in C?
+
+printf() is used to display output on screen.
+
+Example:
+
+printf("Hello World");
+
+
+---
+
+35️⃣ Define looping. Name any three looping structures in C.
+
+Looping means repeating a block of code multiple times.
+
+Three loop types:
+
+for
+
+while
+
+do-while
+
+
+
+---
+
+36️⃣ What is the use of the break statement in C?
+
+break is used to exit a loop or switch statement immediately.
+
+Example:
+
+if(x==5) break;
+
+
+---
+
+37️⃣ Write a simple program to read two integers and print their sum.
+
+#include <stdio.h>
+int main() {
+   int a, b;
+   printf("Enter two numbers: ");
+   scanf("%d %d", &a, &b);
+   printf("Sum = %d", a + b);
+   return 0;
+}
+
+
+---
+
+38️⃣ Explain input/output functions in C with examples.
+
+Type	Function	Example
+
+Input	scanf()	scanf("%d",&x);
+Output	printf()	printf("%d",x);
+
+
+
+---
+
+39️⃣ Describe if, if-else, else-if, and nested if with syntax and example.
+
+✔ if:
+
+if(a>0) { printf("Positive"); }
+
+✔ if-else:
+
+if(a>0) printf("Positive");
+else printf("Negative");
+
+✔ else-if ladder:
+
+if(a>0) printf("Positive");
+else if(a<0) printf("Negative");
+else printf("Zero");
+
+✔ Nested if:
+
+if(a>0) {
+    if(a%2==0) printf("Even Positive");
+}
+
+
+---
+
+40️⃣ Switch program to display day (1-7).
+
+#include <stdio.h>
+int main() {
+    int day;
+    scanf("%d",&day);
+    switch(day){
+        case 1: printf("Monday"); break;
+        case 2: printf("Tuesday"); break;
+        case 3: printf("Wednesday"); break;
+        case 4: printf("Thursday"); break;
+        case 5: printf("Friday"); break;
+        case 6: printf("Saturday"); break;
+        case 7: printf("Sunday"); break;
+        default: printf("Invalid");
+    }
+}
+
+Here are the last answers (41–42) in short exam format.
+
+
+---
+
+41️⃣ Compare and contrast for, while, and do-while loops with syntax and example.
+
+Feature	for Loop	while Loop	do-while Loop
+
+Condition check	Before execution	Before execution	After execution
+Execution guarantee	May not execute	May not execute	Executes at least once
+Best used when	Number of iterations known	Condition-based looping	At least one execution needed
+
+
+Syntax & Examples:
+
+✔ for loop
+
+for(int i=1; i<=5; i++){
+    printf("%d", i);
+}
+
+✔ while loop
+
+int i = 1;
+while(i <= 5){
+    printf("%d", i);
+    i++;
+}
+
+✔ do-while loop
+
+int i = 1;
+do{
+    printf("%d", i);
+    i++;
+} while(i <= 5);
+
+
+---
+
+42️⃣ Write a C program to print all even numbers between 1 to 100 using a for loop and continue statement.
+
+#include <stdio.h>
+int main() {
+    for(int i=1; i<=100; i++){
+        if(i % 2 != 0)
+            continue;  // Skip odd numbers
+        
+        printf("%d ", i); // Print even number
+    }
+    return 0;
+}
+
