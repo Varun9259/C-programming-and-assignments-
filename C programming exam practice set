@@ -62,7 +62,7 @@ continue: skips current iteration and continues loop.
 Code reuse
 
 Easy debugging
-❌ Disadvantages:
+ Disadvantages:
 
 Memory overhead from function calls.
 
